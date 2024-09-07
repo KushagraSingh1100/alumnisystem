@@ -1,16 +1,18 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <div className="nav">
       <div className="top">
-        <a className="heading" href="/">
+        <Link className="heading" to="/">
           <div className="logo">
             <img src={require("../utils/logo.png")} alt="" />
             <h1>Alumni Portal</h1>
           </div>
-        </a>
-        <a className="sign" href="/">
+        </Link>
+        <Link className="sign" to="/login">
           LOGIN / SIGN UP
-        </a>
+        </Link>
       </div>
       <div className="bottom">
         <div className="links">
